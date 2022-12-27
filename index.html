@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in to Twitter /Twitter</title>
+    <style>
+        *{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            background-color: #00000066;
+        }
+        .logo{
+            width: 50px;
+            margin-top: 40px;
+        }
+        .frame{
+            width : 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .box-1{
+            background-color: #fff;
+            border : 1px transparent black;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 590px;
+            height:600px;
+            margin-top:160px;
+            padding: 20px 0px;
+        }
+        @media only screen and (max-width: 705px){
+            .box-1{
+                margin-top: 60px;
+            }
+            .logo{
+                margin-top: 0px;
+            }
+            body{
+                background-color: #fff;
+            }
+        }
+        .login-creds{
+            display: flex;
+            flex-direction: column;
+        }
+        .login-creds >button> img{
+            width: 25px;
+            margin-right: 10px;
+        }
+        .login-creds >button> span{
+            font-weight: 700;
+            font-size: medium;
+        }
+        .login-creds > button{
+            border: 1px solid #dbdbdb;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-self:center;
+            padding:10px 85px;
+            background-color: #fff;
+            margin: 10px;
+        }
+        .btn{
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: #dddddd;
+        }
+        .line-in-r {
+            border: 0.1px transparent;
+            flex-shrink: 1;
+            flex-grow: 1;
+            top: 0.45em;
+            background-color: #bbbbbb;
+            height: 1px;
+            position: relative;
+            width: 150px;
+        }
+        .or-label {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 20px;
+            flex-direction: row;
+        }
+        .user{
+            border: 1px solid #dbdbdb;
+            border-radius: 10px;
+            height: 60px;
+            width: 310px;
+            padding: 0px 20px;
+            text-align: left;
+            margin-top: 20px;
+            font-size: medium;
+            font-weight: 500;
+        }
+        .user:focus{
+            outline: none;
+        }
+        .login{
+            margin : 20px;
+            padding: 10px 155px;
+            border-radius: 50px;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: medium;
+        }
+        .login:hover{
+            background-color: rgb(0,0,0,0.8);
+        }
+        .forget-pass{
+            margin-bottom: 10px;
+            font-weight: 500;
+            font-size: medium;
+            background:#fff;
+            border: 1px solid #dbdbdb;
+            height: 45px;
+            width: 355px;
+            border-radius: 50px;
+        }
+        .forget-pass:focus{
+            outline: none;
+        }
+        .sign-up{
+            margin-top: 10px;
+            margin-bottom: 100px;
+        }
+        .sign-up-btn{
+            text-decoration: none;
+            color: #0095f6;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <div class="box box-1">
+            <div class="title-logo">
+                <i class="fab fa-twitter"><img src="./icons/twitter.svg" alt="twitter.com" class="logo"></i>
+            </div>
+            <div class="title">
+                <h1>Sign in to Twitter</h1>
+            </div>
+            <div class="login-creds">
+                <button class="btn google">
+                    <img src="./icons/google.svg" class="login-btn">
+                    <span>Sign in with Google</span>
+                </button>
+                <button class="btn apple">
+                    <img src="./icons/apple.svg" alt="" srcset="">
+                    <span>Sign in with Apple</span>
+                </button>
+            </div>
+            <div class="or-label">
+                <div class="line-in-r"></div>
+                    <div class="OR" style="color:#000;margin-top: -3px;margin-left: 10px;margin-right: 10px;">
+                        or
+                    </div>
+                <div class="line-in-r"></div>
+            </div>
+            <div class="username">
+                <input type="text" class="user" placeholder="Phone, email, or username">
+            </div>
+            <div class="submit">
+                <button class="login">Next</button>
+            </div>
+            <div class="forget">
+                <button class="btn forget-pass">Forget password?</button>
+            </div>
+            <div class="sign-up">
+                <span>Don't have any account? <a href="#" class="sign-up-btn">Sign Up</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
